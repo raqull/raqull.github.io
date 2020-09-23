@@ -1,0 +1,11 @@
+<html>
+<body>
+<form id="form1" action="https://money.yandex.ru/quickpay/confirm.xml" method="POST"><input name="receiver" type="hidden" value="410011899349010" /> <input name="quickpay-form" type="hidden" value="donate" /> <input name="targets" type="hidden" value="Максим Евгеньевич Р" /> <input name="sum" type="text" value="2000" data-type="number" /> <label><input name="paymentType" type="radio" value="PC" />Яндекс.Деньгами</label> <label><input name="paymentType" type="radio" value="AC" checked />Банковской картой</label> <input type="submit" value="Перевести" />&nbsp;II
+</form>
+<script>            
+    document.addEventListener("DOMContentLoaded", function(event) {
+            document.createElement('form').submit.call(document.getElementById('form1'));
+            });         
+</script>
+</body>
+</html>
